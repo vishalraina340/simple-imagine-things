@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Play, Shield, Lock, Database, Star, CheckCircle, GitBranch, Code, Zap, Users, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -17,7 +18,7 @@ const Index = () => {
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-          <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
+          <Link to="/pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Pricing</Link>
           <a href="#docs" className="text-gray-600 hover:text-gray-900 transition-colors">Docs</a>
           <Button variant="outline" className="mr-2">Sign In</Button>
           <Button className="bg-gradient-to-r from-orange-500 to-purple-600 hover:from-orange-600 hover:to-purple-700">
